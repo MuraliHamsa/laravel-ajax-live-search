@@ -72,7 +72,8 @@
 				<span class="icon icon-bar" style="background-color: #c0aa83"></span>
 				<span class="icon icon-bar" style="background-color: #c0aa83"></span>
 			</button>
-			<a href="#" class="navbar-brand"><img src="images/vr.jpg" alt="" title="" style="width:300px;height:100px;"></a>
+			<a href="#" class="navbar-brand"> <img src="images/images.png" alt="" title=""></a>
+			
 			
 		</div>
 		<div class="collapse navbar-collapse" id="navbarr">

@@ -77,10 +77,10 @@ $(document).ready(function() {
   -----------------------------------------------*/
   $(function(){
     jQuery(document).ready(function() {
-    $('#home').backstretch([
+    $('#home1').backstretch([
        "images/1.jpeg", 
        "images/3.jpg",
-       "images/4.jpg", 
+       "images/yadav.png", 
        "images/6.jpg", 
         ],  {duration: 2000, fade: 3050});
     });

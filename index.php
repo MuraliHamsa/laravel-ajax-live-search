@@ -43,6 +43,29 @@
 		font-family: 'Montserrat', sans-serif;
 		font-size: 45px;
 	}
+.after, .before {
+    height:50px;
+    background-color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#banner {
+    position: relative;
+    height:800px;
+    width:100%;
+    overflow: hidden;
+}
+#videobcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height:auto;
+    width:auto;
+    z-index: -100;
+}
 </style>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -57,14 +80,14 @@
 
 </div>
 
-
 <!-- =========================
     HOME SECTION   
 ============================== -->
-<section id="home" class="parallax-section">
-	<div class="container">
-		<div class="row">
-<div class="navbar navbar-transprent" role="navigation" id="sliderr">
+<section id="banner">
+    <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+        <source src="images/video.mp4" type="video/mp4">
+            <source src="movie.webm" type="video/webm"></video>
+    <div class="navbar navbar-default" role="navigation" id="">
 	<div class="container">
 
 		<div class="navbar-header">
@@ -73,11 +96,13 @@
 				<span class="icon icon-bar" style="background-color: #c0aa83"></span>
 				<span class="icon icon-bar" style="background-color: #c0aa83"></span>
 			</button>
-			<a href="#" class="navbar-brand"> <img src="images/vr.jpg" alt="" title="" style="width:300px;height:100px;"></a>
+			<a href="#" class="navbar-brand"> <img src="images/images.png" alt="" title=""></a>
+			
+			
 		</div>
 		<div class="collapse navbar-collapse" id="navbarr">
 			<ul class="nav navbar-nav navbar-right main-navigation">
-				<li><a href="index.php" ><b>Home</b></a></li>
+				<li><a href="index.php" >Home</a></li>
 				<li><a href="about.php" >About</a></li>
 				<li><a href="products.php" >Projects</a></li>
 				<!-- <li><a href="blog.php" >Blogs</a></li> -->
@@ -87,21 +112,7 @@
 
 	</div>
 </div>
-			<div class="col-md-offset-1 col-md-10 col-sm-12">
-
-				<h2 class="wow fadeInUp pricing__title" data-wow-delay="1.9s" style="font-size:2vw;font-family: 'Montserrat', sans-serif;font-weight:bold;color:rgb(245, 28, 28);text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(255,255,255,0.3);">Layout Development</h2>
-				<h2 class="wow fadeInUp pricing__title" data-wow-delay="1.6s" style="font-size:2vw;font-family: 'Montserrat', sans-serif;color:rgb(56, 28, 245);">ALL TYPES OF LOANS</h2>
-				<h2 class="wow fadeInUp pricing__title" data-wow-delay="1.9s" style="font-size:2vw;font-family: 'Montserrat', sans-serif;color:black;">Property Sales and Marketing</h2>
-				<h2 class="wow fadeInUp pricing__title" data-wow-delay="1.6s" style="font-size:2vw;font-family: 'Montserrat', sans-serif;color:rgb(14, 246, 16);">Construction</h2>
-           <!-- <a href="about.php" class="wow fadeInUp smoothScroll btn btn-default" data-wow-delay="2s" style="font-family: 'Montserrat', sans-serif;font-weight: 900">ABOUT US</a>
-				<a href="products.php" id="products" class="wow fadeInUp smoothScroll btn btn-default" data-wow-delay="2s" style="font-family: 'Montserrat', sans-serif;font-weight: 900">OUR PRODUCTS</a> -->
-			</div>
-
-		</div>
-	</div>
 </section>
-
 
 <!-- =========================
     OVERVIEW SECTION   
@@ -206,13 +217,13 @@ Personal Loans</p>
 					<i class="fa fa-quote-left"></i>
 					<h3>Property Sales And Marketing.</h3>
 					<p>Legal Opinion,
-Project approval from all leading Banks,
-All types of Agreements,
-Registration of all deeds,
-Joint Development Agreement & General Power of Attorney,
-Khatha related work,
-Property tax peyment,
-Licining work</p>
+						Project approval from all leading Banks,
+						All types of Agreements,
+						Registration of all deeds,
+						Joint Development Agreement & General Power of Attorney,
+						Khatha related work,
+						Property tax peyment,
+						Licining work</p>
 				</div>
               <div class="item col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow fadeInUp" data-wow-delay="0.6s">
 					<i class="fa fa-quote-left"></i>

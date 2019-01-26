@@ -71,7 +71,9 @@
 				<span class="icon icon-bar" style="background-color: #c0aa83"></span>
 				<span class="icon icon-bar" style="background-color: #c0aa83"></span>
 			</button>
-			<a href="#" class="navbar-brand"><img src="images/vr.jpg" alt="" title="" style="width:300px;height:100px;"></a>
+			<a href="#" class="navbar-brand"> <img src="images/images.png" alt="" title=""></a>
+			
+			
 		</div>
 		<div class="collapse navbar-collapse" id="navbarr">
 			<ul class="nav navbar-nav navbar-right main-navigation">
@@ -85,7 +87,6 @@
 
 	</div>
 </div>
-
 <!-- =========================
     ABOUT US SECTION   
 ============================== -->
@@ -150,7 +151,7 @@
 <!-- =========================
     BLOG SECTION   
 ============================== -->
-<section id="blog" class="parallax-section" style="background-image: url('images/123.png');background-color:black;">
+<section id="blog" class="parallax-section" style="background-image: url('images/yadav.jpeg');background-color:black;">
 	<div class="container">
 		<div class="row">
 
