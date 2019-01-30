@@ -29,12 +29,38 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
 <style type="text/css">
 	#navbarr li a{
-		color: #2ced3c;
+		
 		font-weight:1000;
 		font-family: 'Montserrat', sans-serif;
-		font-size:20px;
 		padding:15px;
 		font-weight:bold;
+		 font-size:24pt;
+  font-family: 'Luckiest Guy';
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0px -6px 0 #212121,  
+                 0px -6px 0 #212121,
+                 0px  6px 0 #212121,
+                 0px  6px 0 #212121,
+                -6px  0px 0 #212121,  
+                 6px  0px 0 #212121,
+                -6px  0px 0 #212121,
+                 6px  0px 0 #212121,
+                -6px -6px 0 #212121,  
+                 6px -6px 0 #212121,
+                -6px  6px 0 #212121,
+                 6px  6px 0 #212121,
+                -6px  18px 0 #212121,
+                 0px  18px 0 #212121,
+                 6px  18px 0 #212121,
+                 0 19px 1px rgba(0,0,0,.1),
+                 0 0 6px rgba(0,0,0,.1),
+                 0 6px 3px rgba(0,0,0,.3),
+                 0 12px 6px rgba(0,0,0,.2),
+                 0 18px 18px rgba(0,0,0,.25),
+                 0 24px 24px rgba(0,0,0,.2),
+                 0 36px 36px rgba(0,0,0,.15);
 	}
 	.navbar-header a{
 		color: #c0aa83;
@@ -72,7 +98,7 @@
 				<span class="icon icon-bar" style="background-color: #c0aa83"></span>
 				<span class="icon icon-bar" style="background-color: #c0aa83"></span>
 			</button>
-			<a href="#" class="navbar-brand"> <img src="images/images.png" alt="" title=""></a>
+			<a href="#" class="navbar-brand"> <img src="images/images.png" alt="" title="" width="150px" height="78px"></a>
 			
 			
 		</div>
@@ -184,7 +210,103 @@
 		</div>
 	</div>
 </section>
+<button class="open-button btn-warning" onclick="openForm()">Keep On Touch</button>
 
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h4>Leave Your Details</h4>
+
+    <!-- <label for="msg"><b>Message</b></label> -->
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn btn-sm">Send</button>
+    <button type="button" class="btn cancel btn-sm" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<style type="text/css">
+.open-button {
+  color: white;
+  padding:8px 12px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  font-size:20px;
+  font-weight:bold;
+  border-radius:20px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius:20px;
+
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 
 <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Berkshire+Swash|Bevan|Concert+One|Lobster|Playball" rel="stylesheet"> 
 <footer>
@@ -193,17 +315,18 @@
 
 			<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
 				<h2 style="font-family: 'Montserrat', sans-serif;">Contact Us</h2>
-				<p>Location:  #1516, 17th Main, 2nd Phase,
-					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JP Nagar, 
+				<p><span style="color:white;font-weight:bold;">Location : &nbsp;</span> #1516, 17th Main, 2nd Phase,
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JP Nagar, 
                  Bengaluru - 560078</p>
                    <p>
-                  Email: reghevendrar@vrventures.com<br>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Web: www.vrventures.com</span>
+                   <p>
+                 <span style="color:white;font-weight:bold;"> Email : </span>reghevendrar@vrventures.com<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>info@vrventures.com</span>
                 </p>
                  <p>
-                  Call: +91 9945445678<br>
+               <span style="color:white;font-weight:bold;">Call : </span>+91 9945445678<br>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      +91 9845218043<br>
-                  <span>Monday-Friday (9am-5pm)</span>
+                  
                 </p>
 			</div>
 
@@ -232,7 +355,7 @@
 			
 		</div>
 	</div>
-</footer>	
+</footer>
 
 <!-- =========================
      SCRIPTS   
